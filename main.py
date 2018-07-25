@@ -32,7 +32,7 @@ submission_list = json.loads(open(PATH + 'data.json', 'r').read())
 def save_data():
     global DATA_LOCK
     while DATA_LOCK:
-        time.sleep(5)
+        time.sleep(0.05)
     DATA_LOCK = True
     f = open(PATH + 'data.json', 'w')
     f.write(json.dumps(submission_list, ensure_ascii=False))
