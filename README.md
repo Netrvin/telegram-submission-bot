@@ -23,6 +23,8 @@ python main.py
 
 ## 使用
 ### 投稿
+![Screenshot](https://github.com/Netrvin/telegram-submission-bot/raw/master/Readme_Img/Screenshot1.jpg)
+
 将消息发送至机器人，选择是否保留消息来源后即可完成投稿（若转发他人的消息，则不可选择不保留消息来源）
 可接收的投稿类型:
 * 文字
@@ -32,6 +34,8 @@ python main.py
 * 文件
 
 ### 审稿
+![Screenshot](https://github.com/Netrvin/telegram-submission-bot/raw/master/Readme_Img/Screenshot2.jpg)
+
 所有在审稿群中的用户，点击采用即可完成审稿
 在群中回复稿件本身（不是稿件详情），可在采用的同时对其进行评论
 
