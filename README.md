@@ -1,7 +1,7 @@
 # telegram-submission-bot
 
 ## 准备
-* 安装Python并运行`pip install python-telegram-bot --upgrade`
+* 安装Python并运行`pip install python-telegram-bot==11.1.0`
 * 创建1个Bot、1个Group和1个Public Channel
 
 ## 配置
