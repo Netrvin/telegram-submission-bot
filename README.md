@@ -14,7 +14,7 @@
     "Publish_Channel_ID": ""     //频道ID（如：@channel）
 }
 ```
-在审稿群中输入`/setgroup`
+运行bot后在审稿群中输入`/setgroup`
 
 ## 运行
 ```
