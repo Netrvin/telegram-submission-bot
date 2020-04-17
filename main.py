@@ -10,9 +10,11 @@ import datetime
 import os
 import logging
 import threading
+import six
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+if six.PY2:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
 
 Version_Code = 'v1.0.0'
 
@@ -53,8 +55,7 @@ me = updater.bot.get_me()
 CONFIG['ID'] = me.id
 CONFIG['Username'] = '@' + me.username
 
-print 'Starting... (ID: ' + str(CONFIG['ID']) + ', Username: ' \
-    + CONFIG['Username'] + ')'
+print('Starting... (ID: ' + str(CONFIG['ID']) + ', Username: ' + CONFIG['Username'] + ')')
 
 
 def process_msg(bot, update):
@@ -318,9 +319,9 @@ dispatcher.add_handler(telegram.ext.MessageHandler(telegram.ext.Filters.command,
 dispatcher.add_handler(telegram.ext.CallbackQueryHandler(process_callback))
 
 updater.start_polling()
-print 'Started'
+print('Started')
 updater.idle()
-print 'Stopping...'
+print('Stopping...')
 save_data()
-print 'Data saved.'
-print 'Stopped.'
+print('Data saved.')
+print('Stopped.')
